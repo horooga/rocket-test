@@ -1,0 +1,30 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/css/pico.pink.min.css">
+</head>
+<body>
+	<div style="height: auto; width: auto; margin: 10% 20% 5%;"> 
+	    <center><img src="/static/pngs/question{{n}}.png" width=80% height=80%/></center>
+	</div>
+	<div style="margin: 0% 20%">
+		<t1>Вопрос номер {{dn}}.</t1>
+		<br>
+		<t1>{{question}}</t1>
+	</div>
+	<div style="height: auto; width: auto; margin: 1% 30% 0%;">
+        <form method="POST" action="/question/{{n}}/0">
+			<center><button type="submit">{{variant0}}</button></center>
+		</form>
+    </div>
+    <div style="height: auto; width: auto; margin: 1% 30% 0%;">
+        <form method="POST" action="/question/{{n}}/1">
+			<center><button type="submit">{{variant1}}</button></center>
+		</form></body>
+    </div>
+    <div style="height: auto; width: auto; margin: 1% 30% 0%;">
+        <form method="POST" action="/question/{{n}}/2">
+			<center><button type="submit">{{variant2}}</button></center>
+		</form></body>
+    </div>
+</html>
