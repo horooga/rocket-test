@@ -1,1 +1,1 @@
-nginx & ./main
+nginx "-g daemon off;" & ./main
